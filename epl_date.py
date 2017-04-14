@@ -29,7 +29,7 @@ def epl_date(input_str):
     :param input_str: string with a name of input string file
     :return: 'yyyy-mm-dd' string or 'A/B/C is illegal'
     """
-    lst = sorted(list(map(int, input_str.split('/'))))
+    lst = sorted(map(int, input_str.split('/')))
     illegal_msg = '{} is illegal'.format(input_str)
 
     # BASE CASE: More than one 0 or all numbers > 12
